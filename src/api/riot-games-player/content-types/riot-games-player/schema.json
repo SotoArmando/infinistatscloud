@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "riot_games_players",
+  "info": {
+    "singularName": "riot-games-player",
+    "pluralName": "riot-games-players",
+    "displayName": "RiotGamesPlayer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "minLength": 4,
+      "default": "Armando Soto"
+    },
+    "Playername": {
+      "type": "string",
+      "required": true,
+      "default": "Batmanshot#LAN"
+    },
+    "ProfilePicture": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "RiotGame": {
+      "type": "enumeration",
+      "enum": [
+        "Valorant",
+        "League of Legends"
+      ],
+      "required": true,
+      "default": "League of Legends"
+    }
+  }
+}
